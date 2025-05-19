@@ -25,20 +25,19 @@
 
 ## 📦 Project Structure
 
-sentiment_api/
-├── api/ # Django app for sentiment API
-│ ├── views.py # View handling sentiment logic
-│ ├── serializers.py # Input/Output validation
-│ ├── urls.py # Route config
-├── sentiment_api/ # Project settings
-├── requirements.txt # Python dependencies
-├── Dockerfile # Docker setup
-├── .gitignore
-├── .env
-└── manage.py
-
-
----
+sentiment_api/ <br>
+├── api/ # Django app for sentiment API <br>
+│ ├── views.py # View handling sentiment logic<br>
+│ ├── serializers.py # Input/Output validation<br>
+│ ├── urls.py # Route config<br>
+├── sentiment_api/ # Project settings<br>
+├── requirements.txt # Python dependencies<br>
+├── Dockerfile # Docker setup<br>
+├── .gitignore<br>
+├── .env<br>
+└── manage.py<br>
+<br>
+---<br>
 
 ## 📥 Installation & Usage
 
@@ -53,3 +52,33 @@ pip install -r requirements.txt
 python -m textblob.download_corpora
 python manage.py migrate
 python manage.py runserver
+
+🧠 Sentiment Model
+Uses TextBlob for sentiment analysis.
+
+Polarity Range: [-1.0, 1.0]
+
+Classification Logic:
+
+> 0.1 → Positive
+
+< -0.1 → Negative
+
+Otherwise → Neutral
+
+💡 Future Improvements
+🔁 Replace TextBlob with fine-tuned BERT/DistilBERT
+
+📊 Add confidence scores
+
+🧾 Swagger/OpenAPI documentation
+
+🧪 Unit & integration tests
+
+🧑‍💻 Author
+Made with ❤️ by Dhruv Sharma
+
+<p align="center"> 
+<img src="https://forthebadge.com/images/badges/built-with-love.svg"> 
+<img src="https://forthebadge.com/images/badges/made-with-python.svg"> 
+</p>
