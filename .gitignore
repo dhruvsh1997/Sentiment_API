@@ -5,6 +5,7 @@ __pycache__/
 *.log
 *.pot
 *.pyc
+.env
 *.pyo
 *.pyd
 envSentiment/
