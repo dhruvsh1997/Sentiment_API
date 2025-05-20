@@ -53,18 +53,17 @@ python -m textblob.download_corpora
 python manage.py migrate
 python manage.py runserver
 
-<p></p>
 
-🧠 Sentiment Model
+##🧠 Sentiment Model
 Uses TextBlob for sentiment analysis.
 Polarity Range: [-1.0, 1.0]
 
-Classification Logic:
+##Classification Logic:
 > 0.1 → Positive
 < -0.1 → Negative
 Otherwise → Neutral
 
-💡 Future Improvements
+##💡 Future Improvements
 🔁 Replace TextBlob with fine-tuned BERT/DistilBERT
 
 📊 Add confidence scores
@@ -73,7 +72,7 @@ Otherwise → Neutral
 
 🧪 Unit & integration tests
 
-🧑‍💻 Author
+##🧑‍💻 Author
 Made with ❤️ by Dhruv Sharma
 
 <p align="center"> 
