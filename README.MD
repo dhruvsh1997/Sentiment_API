@@ -41,19 +41,6 @@ sentiment_api/ <br>
 
 ## 📥 Installation & Usage
 
-### 🔧 Local Setup
-
-```bash
-git clone repo_url
-cd sentiment_api
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python -m textblob.download_corpora
-python manage.py migrate
-python manage.py runserver
-
-
 ##🧠 Sentiment Model
 Uses TextBlob for sentiment analysis.
 Polarity Range: [-1.0, 1.0]
@@ -74,8 +61,19 @@ Otherwise → Neutral
 
 ##🧑‍💻 Author
 Made with ❤️ by Dhruv Sharma
-
 <p align="center"> 
 <img src="https://forthebadge.com/images/badges/built-with-love.svg"> 
 <img src="https://forthebadge.com/images/badges/made-with-python.svg"> 
 </p>
+
+### 🔧 Local Setup
+
+```bash
+git clone repo_url
+cd sentiment_api
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python -m textblob.download_corpora
+python manage.py migrate
+python manage.py runserver
