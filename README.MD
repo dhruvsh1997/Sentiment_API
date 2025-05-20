@@ -39,7 +39,7 @@ sentiment_api/ <br>
 <br>
 ---<br>
 
-## 📥 Installation & Usage
+# 📥 Installation & Usage
 
 ##🧠 Sentiment Model
 Uses TextBlob for sentiment analysis.
